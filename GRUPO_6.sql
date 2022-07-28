@@ -25,3 +25,10 @@ INSERT INTO tipos_de_cuentas(tipo_de_cuenta)
 VALUES('Caja de Ahorro en Pesos'),('Caja de Ahorro en Dolares'),('Cuenta Corriente en Pesos'),('Cuenta Corriente en Dolares'),('Cuenta Inversion');
 
 #SEGUNDO ITEM
+CREATE TABLE tarjeta(
+	numero INTEGER UNIQUE PRIMARY KEY NOT NULL CHECK(20>=length(Numero)) ,
+	CVV INTEGER NOT NULL CHECK(length(CVV)<=4),
+	fecha_de_otorgamiento INTEGER NOT NULL CHECK(length(fecha_de_otorgamiento)=4),
+	fecha_de_vencimiento INTEGER NOT NULL CHECK(length(fecha_de_vencimiento)=4),
+	tipo_tarjeta TEXT NOT NULL CHECK(tipo_tarjeta="credito" OR tipo_tarjeta="debito")
+);
