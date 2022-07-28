@@ -20,5 +20,5 @@
 [1]: https://github.com/DanielBenjaminLopez
 [2]: https://github.com/Elias-m7
 [3]: https://github.com/lauranv28
-[4]: https//github.com/facundollanos
+[4]: https://github.com/facundollanos
 [home]: https://github.com/lauranv28/TukiStack
