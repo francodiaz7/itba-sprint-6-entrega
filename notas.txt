@@ -1,0 +1,59 @@
+Primer problemática
+
+CREATE TABLE tipo_cliente (
+customer_type_id INTEGER PRIMARY KEY,
+type_description TEXT NOT NULL
+); 
+
+INSERT INTO tipo_cliente (type_description)
+VALUES
+("CLASSIC"),
+("GOLD"),
+("BLACK"); 
+
+
+Tipo de cuentas a agregar
+
+CREATE TABLE tipo_cuenta (
+account_type_id INTEGER PRIMARY KEY,
+account_type_description TEXT NOT NULL
+);
+
+INSERT INTO tipo_cuenta (account_type_description)
+VALUES
+("Caja de ahorro en Pesos"),
+("Caja de ahorro en dolares"),
+("Cuenta corriente en Pesos"),
+("Cuenta corriente en dolares"),
+("Cuenta inversion");
+
+Marca de tarjetas
+
+CREATE TABLE marca_tarjetas (
+creditcardbrand_id INTEGER PRIMARY KEY,
+creditcardbrand_name TEXT NOT NULL
+);
+
+INSERT INTO marca_tarjetas (creditcardbrand_name)
+VALUES
+("Mastercard"),
+("Visa"),
+("American Express");
+
+
+Revisar el limite de 20 digitos con check
+
+Ejemplo del formato para insertar datos de las tarjetas de crédito
+("343549897659889","921","0122","0923","Debito","2",404),
+20 numeros, codigo de seguridad, fecha de otorgamiento, fecha de expiracion, tipo de tarjeta, marca de tarjeta (1, 2 y 3), id del cliente.
+
+
+Tercer problemática
+pt2 WHERE customer_surname LIKE '%z%';
+
+Cuarta problemática
+Usar inner join
+pt2
+CREATE VIEW vCantidadClientesSucursal AS
+SELECT COUNT(customer_id) as "CantClientes", T1.branch_name, T1.branch_id FROM cliente T0 INNER JOIN sucursal T1 ON T0.branch_id = T1.branch_id GROUP BY branch_name ORDER BY COUNT(customer_id) DESC;
+último punto meter la query en una transaccion y hacer commit, no es necesario la parte de rollback (usando transacción y commit)
