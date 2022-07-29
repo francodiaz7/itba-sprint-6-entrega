@@ -642,4 +642,21 @@ VALUES
   ("3441 194748 24592","805","0821","0425","Crédito",3,142),
   ("3477 861866 71367","616","0723","0525","Crédito",2,205),
   ("5551 8738 2312 4378","534","0222","0224","Débito",3,343);
- 
+
+-- ITEM SEIS
+CREATE TABLE direcciones(
+	direccion_id INTEGER PRIMARY KEY,
+	direccion TEXT NOT NULL,
+	ciudad TEXT NOT NULL,
+	provincia TEXT NOT NULL,
+	pais TEXT NOT NULL,
+	customer_id INTEGER,
+	employee_id INTEGER,
+	branch_id INTEGER,
+	FOREIGN KEY (customer_id) 
+		REFERENCES cliente(customer_id),
+	FOREIGN KEY (employee_id)
+		REFERENCES empleado(employee_id),
+	FOREIGN KEY (branch_id)
+		REFERENCES sucursal(branch_id)
+);
