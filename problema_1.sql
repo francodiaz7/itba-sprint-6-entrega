@@ -644,6 +644,7 @@ VALUES
   ("5551 8738 2312 4378","534","0222","0224","Débito",3,343);
 
 -- ITEM SEIS
+/*
 CREATE TABLE direcciones(
 	direccion_id INTEGER PRIMARY KEY,
 	direccion TEXT NOT NULL,
@@ -660,3 +661,614 @@ CREATE TABLE direcciones(
 	FOREIGN KEY (branch_id)
 		REFERENCES sucursal(branch_id)
 );
+*/
+
+-- ITEM SIETE
+/*
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("828-5707 Non, Avenue","Hamburg","Hà Giang","Canada",454,"",""),
+  ("Ap #141-2309 Natoque Avenue","Mount Isa","Antioquia","Turkey",137,"",""),
+  ("979-3565 Suspendisse Avenue","Saalfelden am Steinernen Meer","Midi-Pyrénées","Mexico",8,"",""),
+  ("Ap #281-3064 Tellus Av.","Jaén","Buteshire","Peru",38,"",""),
+  ("140-9042 Luctus, Ave","Yên Bái","Sachsen-Anhalt","Netherlands",109,"",""),
+  ("P.O. Box 519, 1698 Torquent Rd.","Namur","Puno","Netherlands",157,"",""),
+  ("627-1270 Cursus Street","Tokoroa","Franche-Comté","Colombia",429,"",""),
+  ("984-9362 Feugiat. Street","Straubing","Gujarat","Poland",202,"",""),
+  ("Ap #866-7146 Diam. Rd.","Cheltenham","Nunavut","Italy",327,"",""),
+  ("516-9108 Vivamus Rd.","Coupar Angus","Xīnán","Indonesia",42,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("4030 Sagittis. St.","Gwangyang","Innlandet","Russian Federation",301,"",""),
+  ("572-1860 Aliquam Av.","Kostiantynivka","Ankara","China",342,"",""),
+  ("542-7808 Cursus Av.","Long Xuyên","Lâm Đồng","Norway",272,"",""),
+  ("415-7242 Nisi. Street","Kaneohe","Eastern Visayas","Brazil",446,"",""),
+  ("Ap #592-8322 Arcu. St.","Jiutepec","Overijssel","Peru",74,"",""),
+  ("Ap #238-6503 Ut Av.","Cork","Lviv oblast","Norway",338,"",""),
+  ("P.O. Box 928, 8948 Tempor Road","Cork","Gauteng","China",456,"",""),
+  ("812-7341 Mi, St.","Kovel","Vĩnh Long","Russian Federation",163,"",""),
+  ("730-3754 Curabitur Avenue","Dresden","Massachusetts","Ireland",34,"",""),
+  ("Ap #649-2874 Lobortis, Street","Itanagar","Podkarpackie","Russian Federation",455,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #966-6957 Lacinia Road","Lim Chu Kang","Victoria","Turkey",471,"",""),
+  ("Ap #272-3031 Dignissim. St.","East London","San José","New Zealand",488,"",""),
+  ("629-2868 Dolor Road","Auxerre","Hậu Giang","India",458,"",""),
+  ("P.O. Box 959, 7599 Risus. Ave","Longvilly","Rivers","Germany",260,"",""),
+  ("Ap #486-5799 Vulputate, Rd.","Tulsa","Volyn oblast","Chile",143,"",""),
+  ("Ap #251-7595 Ante Avenue","Abeokuta","Oost-Vlaanderen","Turkey",368,"",""),
+  ("612-7835 In Street","Voronezh","East Region","Sweden",341,"",""),
+  ("301-9683 Pede Rd.","Toowoomba","Ohio","Vietnam",48,"",""),
+  ("Ap #934-9875 Phasellus Road","Richmond","Östergötlands län","Chile",4,"",""),
+  ("P.O. Box 992, 5349 Eros. St.","Opole","Gilgit Baltistan","Nigeria",202,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("363-7528 Sem. St.","Bergen op Zoom","North Chungcheong","Ukraine",290,"",""),
+  ("1697 Vitae St.","Tauranga","Warmińsko-mazurskie","Pakistan",140,"",""),
+  ("308 Consequat St.","Irpin","Cherkasy oblast","Austria",111,"",""),
+  ("Ap #290-4011 Suscipit, Street","Hengelo","San José","Vietnam",68,"",""),
+  ("701-1396 Curae Road","Fort Good Hope","Cartago","Vietnam",334,"",""),
+  ("215-300 Eros St.","Daman","Ulster","New Zealand",318,"",""),
+  ("172-1050 Pede. Rd.","Pinkafeld","Special Region of Yogyakarta","Ireland",496,"",""),
+  ("Ap #707-617 At, St.","Galway","Papua","Philippines",229,"",""),
+  ("Ap #589-9529 Nec Rd.","Ashburton","Vlaams-Brabant","Netherlands",430,"",""),
+  ("P.O. Box 977, 9281 Dui St.","Cork","Puntarenas","Ireland",492,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("183-2366 Quisque Av.","Jakarta","O'Higgins","Indonesia",469,"",""),
+  ("242-6521 Neque Ave","Vienna","Westmorland","New Zealand",201,"",""),
+  ("652-5964 Imperdiet Rd.","Subiaco","Schleswig-Holstein","South Africa",422,"",""),
+  ("939-3294 Cursus, St.","Dumai","Bahia","India",75,"",""),
+  ("766-8938 Enim. Road","Greater Hobart","Xīběi","Norway",467,"",""),
+  ("514-5214 Dictum. Rd.","Cheongju","Cusco","Turkey",198,"",""),
+  ("P.O. Box 186, 5136 Porttitor Road","Guadalupe","San Andrés y Providencia","Costa Rica",86,"",""),
+  ("Ap #827-2565 Pellentesque. St.","San Pedro de Atacama","Puno","Brazil",42,"",""),
+  ("P.O. Box 816, 4674 Tellus St.","Zittau","Puebla","China",200,"",""),
+  ("Ap #378-9194 Semper St.","La Estrella","Sucre","Canada",41,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #510-8947 Aliquam Avenue","Shostka","Västra Götalands län","Belgium",189,"",""),
+  ("904-7163 Auctor Rd.","Agartala","West Region","New Zealand",402,"",""),
+  ("P.O. Box 198, 6170 Scelerisque, Rd.","Piura","Luxemburg","Costa Rica",406,"",""),
+  ("817-7931 Vel Road","Belfast","Caraga","Norway",83,"",""),
+  ("445-8703 Erat, Rd.","Leirvik","Opolskie","Italy",192,"",""),
+  ("490-2375 Pellentesque Street","Sialkot","Azad Kashmir","Turkey",146,"",""),
+  ("P.O. Box 773, 4562 Non, Street","Cametá","Trà Vinh","Netherlands",133,"",""),
+  ("760-4910 Nec St.","Villa Cortese","Puntarenas","Vietnam",251,"",""),
+  ("339-3874 A Avenue","Barranca","Australian Capital Territory","Italy",346,"",""),
+  ("P.O. Box 579, 9780 Dictum Rd.","Singkawang","Friesland","Ireland",456,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("836-1764 Gravida Rd.","Bünyan","Quảng Trị","France",386,"",""),
+  ("Ap #618-5465 Hymenaeos. Rd.","Reims","Overijssel","Singapore",267,"",""),
+  ("875-4418 Habitant St.","Tabuk","Cantabria","Mexico",158,"",""),
+  ("529-437 Eros. Av.","Marchihue","Lincolnshire","Mexico",201,"",""),
+  ("385-1663 Adipiscing Street","Kufstein","Ross-shire","Chile",152,"",""),
+  ("P.O. Box 430, 3597 Eu Road","Johannesburg","Vestland","Netherlands",451,"",""),
+  ("7357 Consectetuer Road","Swellendam","Bauchi","South Korea",176,"",""),
+  ("P.O. Box 747, 3779 Pede. Road","Warri","Rheinland-Pfalz","France",166,"",""),
+  ("126-5620 Eu, Rd.","Stratford-upon-Avon","East Region","South Africa",50,"",""),
+  ("1061 Aliquet Avenue","Welkom","Ceará","India",154,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("764-3434 Odio Rd.","Vetlanda","Kujawsko-pomorskie","United Kingdom",451,"",""),
+  ("Ap #199-2129 Pellentesque Av.","Afşin","Waals-Brabant","Costa Rica",69,"",""),
+  ("1894 Sed Rd.","Langenburg","Guanacaste","Singapore",240,"",""),
+  ("280-8574 Nibh. Road","Chitral","Goiás","Singapore",99,"",""),
+  ("7201 Ut Rd.","Trà Vinh","Schleswig-Holstein","Poland",313,"",""),
+  ("750-2376 Quam St.","Tampines","Santa Catarina","Singapore",356,"",""),
+  ("914-4800 Faucibus Road","Reading","Puebla","Chile",267,"",""),
+  ("197-1709 Aliquet Av.","North Las Vegas","Podkarpackie","Canada",290,"",""),
+  ("Ap #773-3212 In Rd.","Suncheon","Madrid","Costa Rica",484,"",""),
+  ("Ap #525-5105 Dolor Avenue","Sarpsborg","Bourgogne","Mexico",392,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #136-1100 Nulla Street","Bad Kreuznach","Chernivtsi oblast","France",252,"",""),
+  ("646-8154 Cubilia Street","Mérida","Piemonte","Pakistan",41,"",""),
+  ("Ap #308-3214 Dictum St.","Mahikeng","Australian Capital Territory","Italy",473,"",""),
+  ("9607 Integer Street","Lviv","KwaZulu-Natal","Norway",32,"",""),
+  ("Ap #456-9393 Vitae, St.","Naga","Cagayan Valley","Spain",244,"",""),
+  ("P.O. Box 617, 250 Vestibulum Ave","Mannheim","Punjab","United States",409,"",""),
+  ("869-5773 Sed Av.","Sotteville-lès-Rouen","Galicia","Norway",466,"",""),
+  ("Ap #134-7143 Est. Av.","Cape Breton Island","Ulster","Sweden",301,"",""),
+  ("421-1424 Nunc Rd.","Leticia","Xīnán","Chile",174,"",""),
+  ("Ap #832-9569 Suspendisse Street","Sandnes","São Paulo","China",459,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #664-4917 Fusce Rd.","Notre-Dame-du-Nord","North Island","Peru",146,"",""),
+  ("Ap #478-3120 Vestibulum Ave","Tebing Tinggi","Piura","Ireland",341,"",""),
+  ("Ap #691-8025 Eu, Av.","Dangjin","Central Kalimantan","Nigeria",216,"",""),
+  ("Ap #547-7888 Per Av.","Westport","Lagos","Chile",107,"",""),
+  ("Ap #957-7909 Semper St.","Boryeong","West Region","Poland",84,"",""),
+  ("Ap #534-1095 A Rd.","Tlaquepaque","Odessa oblast","South Korea",228,"",""),
+  ("P.O. Box 878, 927 Per Road","Mahikeng","Munster","Ireland",402,"",""),
+  ("823-2438 Dolor. Avenue","Gasteiz","Navarra","South Africa",443,"",""),
+  ("P.O. Box 547, 1769 Consectetuer Rd.","Hathras","Cusco","Austria",33,"",""),
+  ("P.O. Box 121, 4348 Turpis Av.","La Plata","Östergötlands län","France",359,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #221-8103 Lacus, St.","Bontang","Minnesota","Ukraine",382,"",""),
+  ("1832 Vitae Av.","Mỹ Tho","Sindh","Mexico",74,"",""),
+  ("457-7824 Est, Street","Manokwari","Vestfold og Telemark","Germany",98,"",""),
+  ("844-8866 Vitae Street","Marabá","Carinthia","Germany",374,"",""),
+  ("1811 In Av.","Ways","Ivano-Frankivsk oblast","Turkey",281,"",""),
+  ("P.O. Box 214, 8420 Libero. Ave","Sierra Gorda","La Libertad","Netherlands",79,"",""),
+  ("Ap #530-4181 Enim Ave","Linköping","Munster","Colombia",360,"",""),
+  ("Ap #374-5018 Fringilla Road","San Vicente de Cañete","Alajuela","Colombia",123,"",""),
+  ("P.O. Box 167, 3658 Diam Ave","Mount Gambier","Styria","Australia",422,"",""),
+  ("Ap #555-5291 Nec, Rd.","Moose Jaw","Sinaloa","China",327,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #152-4102 Luctus St.","Zaragoza","Kujawsko-pomorskie","Brazil",126,"",""),
+  ("872-9993 Consequat Road","Anhui","Nevada","Canada",375,"",""),
+  ("9144 Quisque Rd.","Tomsk","North Island","South Korea",8,"",""),
+  ("P.O. Box 590, 6452 Turpis St.","Brakpan","Kogi","New Zealand",406,"",""),
+  ("889-437 Convallis Road","Limón (Puerto Limón]","West Sumatra","Spain",127,"",""),
+  ("P.O. Box 590, 5285 In St.","Trà Vinh","Xīnán","China",168,"",""),
+  ("398-5638 Enim. Rd.","Sneek","Massachusetts","United Kingdom",252,"",""),
+  ("155-2447 Sed St.","Hoorn","Zaporizhzhia oblast","Norway",261,"",""),
+  ("5032 Orci Ave","Nueva Imperial","New Brunswick","Indonesia",22,"",""),
+  ("437-3696 Erat, Ave","South Perth","Guerrero","Mexico",406,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #451-4039 Diam. Rd.","Tarma","Zakarpattia oblast","Australia",412,"",""),
+  ("Ap #327-2031 Dui Rd.","Lüneburg","Dōngběi","New Zealand",17,"",""),
+  ("448-6769 Orci Street","Westlock","Bretagne","South Africa",381,"",""),
+  ("Ap #858-8989 Ornare St.","Shillong","Małopolskie","Vietnam",342,"",""),
+  ("7425 Sed, Avenue","Borås","Ceará","Austria",230,"",""),
+  ("Ap #341-2540 Pharetra. Rd.","Chiavari","South Island","Belgium",108,"",""),
+  ("797-6814 Ipsum. Av.","Sohbatpur","Troms og Finnmark","Norway",192,"",""),
+  ("464-6590 Velit. St.","Gboko","Antioquia","Peru",279,"",""),
+  ("Ap #844-5897 Nibh. St.","Siverek","East Region","Australia",268,"",""),
+  ("P.O. Box 922, 3357 Accumsan St.","Potchefstroom","Bursa","Sweden",216,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("2203 Turpis Street","General Santos","Khyber Pakhtoonkhwa","Poland",291,"",""),
+  ("Ap #401-6930 Scelerisque Rd.","Cumaribo","Gauteng","Indonesia",381,"",""),
+  ("816-3929 Dui Avenue","Bedok","Monmouthshire","Costa Rica",207,"",""),
+  ("4175 Pellentesque Avenue","Veere","Somerset","Sweden",140,"",""),
+  ("1990 A St.","Bridgeport","Pernambuco","Netherlands",426,"",""),
+  ("457-1197 Nibh Rd.","Yunnan","Oyo","Colombia",142,"",""),
+  ("236-3634 Ante Street","Zamboanga City","Hertfordshire","Italy",375,"",""),
+  ("849-831 Erat Av.","Puerto Guzmán","KwaZulu-Natal","Italy",296,"",""),
+  ("128-7766 Elementum, Rd.","Pangnirtung","Vichada","Colombia",159,"",""),
+  ("Ap #747-3551 Congue St.","Starachowice","Lombardia","Mexico",229,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #162-2862 Sociis Street","Ashburton","Rio Grande do Sul","Vietnam",182,"",""),
+  ("P.O. Box 638, 8925 Sed Rd.","Mexico City","Lampung","Mexico",212,"",""),
+  ("Ap #413-4614 Nec Avenue","Lim Chu Kang","Special Region of Yogyakarta","Australia",1,"",""),
+  ("919-1897 Nunc Avenue","Uman","Los Lagos","Vietnam",355,"",""),
+  ("2348 Justo St.","Sungei Kadut","Nuevo León","China",372,"",""),
+  ("P.O. Box 436, 8527 Libero. Ave","Trivandrum","Quảng Ngãi","India",307,"",""),
+  ("512 Ac Rd.","Torreón","Bourgogne","Peru",396,"",""),
+  ("P.O. Box 786, 9476 In Rd.","Rivne","South Island","Nigeria",55,"",""),
+  ("372-8789 Odio. St.","Soledad","Schleswig-Holstein","Ukraine",364,"",""),
+  ("Ap #193-4105 In, St.","Wardha","Tyrol","Peru",87,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #878-8118 Odio. St.","Yeosu","Free State","Germany",307,"",""),
+  ("Ap #254-198 Faucibus Ave","Kailua","Balochistan","Mexico",211,"",""),
+  ("Ap #973-1466 Lectus Rd.","Tlaquepaque","Rivne oblast","Canada",136,"",""),
+  ("Ap #594-1589 Suspendisse St.","Haverhill","Maharastra","Peru",271,"",""),
+  ("Ap #659-4796 Quisque St.","Sint-Gillis","Namen","Indonesia",32,"",""),
+  ("Ap #980-1902 Sem. Av.","Minna","Mersin","Poland",176,"",""),
+  ("Ap #469-1010 Tellus, Av.","Skardu","Nordland","Colombia",315,"",""),
+  ("P.O. Box 626, 6780 Cum Street","Canberra","Andalucía","Netherlands",231,"",""),
+  ("718-1154 Dui. Av.","Jayapura","KwaZulu-Natal","Ireland",371,"",""),
+  ("982-7070 Id, St.","Banjarmasin","Friesland","Germany",107,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("9828 Nascetur Road","Belfast","Östergötlands län","France",100,"",""),
+  ("Ap #142-394 Ut Ave","Potchefstroom","Tripura","France",189,"",""),
+  ("173-9245 Lorem Street","Pangnirtung","Sindh","New Zealand",214,"",""),
+  ("6575 Sem Rd.","Changi","North Chungcheong","Australia",92,"",""),
+  ("498-4497 Mauris Av.","Port Blair","British Columbia","Peru",56,"",""),
+  ("5174 Suspendisse Road","Campitello di Fassa","South Island","New Zealand",270,"",""),
+  ("4722 Lobortis St.","Chernihiv","Balochistan","Germany",475,"",""),
+  ("803-4630 Ullamcorper, Road","Aparecida de Goiânia","Pará","Ireland",357,"",""),
+  ("P.O. Box 478, 9854 Metus. Rd.","Ebenthal in Kärnten","Vestland","Norway",136,"",""),
+  ("Ap #996-8203 Ac Rd.","Radom","Anambra","United States",327,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("P.O. Box 338, 9008 Dapibus St.","Apeldoorn","Henegouwen","Brazil",122,"",""),
+  ("5837 Vitae, St.","Dublin","Cajamarca","Chile",400,"",""),
+  ("P.O. Box 610, 9341 Urna Av.","Kano","East Lothian","Brazil",165,"",""),
+  ("P.O. Box 342, 893 Ornare, Avenue","Nowshera","Volyn oblast","Mexico",314,"",""),
+  ("9493 Non Street","Chervonohrad","Zakarpattia oblast","Italy",233,"",""),
+  ("Ap #492-3338 Iaculis Ave","Tarbes","Cordillera Administrative Region","India",277,"",""),
+  ("7897 Cursus. Street","Arequipa","Western Australia","Ireland",303,"",""),
+  ("Ap #193-1181 Faucibus St.","Shimla","Northern Territory","Australia",98,"",""),
+  ("Ap #298-6958 Phasellus Av.","Wals-Siezenheim","British Columbia","Peru",491,"",""),
+  ("P.O. Box 141, 9397 Sed Rd.","Gongju","Salzburg","South Korea",494,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("372-1780 Rhoncus. Av.","Bollnäs","Norte de Santander","Sweden",446,"",""),
+  ("650-4648 Neque. Rd.","Sievierodonetsk","Aydın","South Africa",268,"",""),
+  ("854-8726 Et Rd.","Førde","Chhattisgarh","Italy",216,"",""),
+  ("Ap #666-4336 Eget, St.","Cardiff","Lower Austria","Canada",343,"",""),
+  ("1648 Sit Street","Évreux","Västra Götalands län","Ireland",14,"",""),
+  ("753-217 Elementum Road","Los Lagos","North-East Region","United States",53,"",""),
+  ("5277 Lobortis Av.","Moelv","Novgorod Oblast","Philippines",279,"",""),
+  ("P.O. Box 806, 4267 Lacus Road","Moorsel","Kahramanmaraş","Ireland",311,"",""),
+  ("5443 Tellus Av.","Purral","Gaziantep","Poland",33,"",""),
+  ("658-3593 Eget Ave","Naga","Oost-Vlaanderen","Peru",285,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("1559 Nibh Ave","Charlottetown","Tuyên Quang","Pakistan",10,"",""),
+  ("Ap #867-5816 Eu Rd.","Lucknow","Victoria","Chile",173,"",""),
+  ("539-5617 Parturient Ave","Colico","Lombardia","Singapore",431,"",""),
+  ("Ap #757-4587 Ad Ave","Cork","Midi-Pyrénées","Russian Federation",92,"",""),
+  ("334-7043 Ac Ave","Montería","Tyrol","China",166,"",""),
+  ("664-5130 Nulla. Rd.","Çermik","Maule","Pakistan",226,"",""),
+  ("Ap #237-4287 Hendrerit Street","Jeju","New South Wales","Nigeria",61,"",""),
+  ("P.O. Box 709, 5702 Dictum. Avenue","Saratov","Noord Holland","Poland",278,"",""),
+  ("773-9788 Tempor Avenue","Norrköping","Sinaloa","Russian Federation",154,"",""),
+  ("P.O. Box 206, 3102 Lectus Ave","Cincinnati","Luxemburg","Norway",355,"","");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("404-8042 Blandit St.","Ludvika","Munster","Pakistan","","",1),
+  ("P.O. Box 396, 1920 Nullam Ave","Limelette","Nova Scotia","Sweden","","",2),
+  ("600-745 Nullam St.","Fredericton","Stockholms län","Canada","","",3),
+  ("1230 Neque Rd.","Uyo","O'Higgins","Russian Federation","","",4),
+  ("437-314 Primis Road","Maracanaú","Northern Mindanao","China","","",5),
+  ("Ap #173-4132 Risus. St.","Gisborne","Munster","Poland","","",6),
+  ("Ap #594-9192 Risus Avenue","Araban","Northern Mindanao","Pakistan","","",7),
+  ("358-9008 Pellentesque St.","Manokwari","Vichada","Indonesia","","",8),
+  ("Ap #742-141 Eu, Rd.","Tengah","Cà Mau","Costa Rica","","",9),
+  ("664-6002 Cras Street","Barranca","West Kalimantan","Colombia","","",10);
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #707-861 Sed St.","Elmshorn","São Paulo","Spain","","",11),
+  ("980-4441 Aliquam, Road","Omsk","Osun","Netherlands","","",12),
+  ("Ap #242-7268 Ipsum Ave","Springs","Zaporizhzhia oblast","India","","",13),
+  ("Ap #159-6887 Luctus Avenue","Guápiles","Viken","Netherlands","","",14),
+  ("Ap #840-313 Nec Av.","Kongsvinger","Uttar Pradesh","Indonesia","","",15),
+  ("Ap #716-5544 Mi. Avenue","Ilhéus","Drenthe","Ukraine","","",16),
+  ("Ap #183-2917 Aliquam Ave","Samara","Metropolitana de Santiago","Canada","","",17),
+  ("Ap #399-1295 Lectus Rd.","Trondheim","Azad Kashmir","Chile","","",18),
+  ("519-5789 Nunc Rd.","Gwangju","Surrey","South Africa","","",19),
+  ("9600 Nisl. Ave","Baden","Konya","Russian Federation","","",20);
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("P.O. Box 266, 5262 Mauris Rd.","Oamaru","Guanacaste","Belgium","","",21),
+  ("4861 Cursus, St.","Tampico","Chocó","Poland","","",22),
+  ("8016 A St.","Olinda","Zhōngnán","China","","",23),
+  ("306-6552 Blandit. Av.","Boon Lay","Principado de Asturias","Australia","","",24),
+  ("848-2809 Sed Rd.","Balfour","FATA","Singapore","","",25),
+  ("P.O. Box 922, 2699 A, Road","Gravataí","Niger","Singapore","","",26),
+  ("Ap #964-6373 Id St.","Galway","North Region","Nigeria","","",27),
+  ("978-8357 Auctor, Ave","Henan","Southeast Sulawesi","South Africa","","",28),
+  ("754-5482 Metus. Rd.","Koszalin","Los Ríos","Germany","","",29),
+  ("9342 Integer St.","Vienna","Oslo","Poland","","",30);
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("326-8253 Mattis. Rd.","Pasir Ris","Saarland","New Zealand","","",31),
+  ("258-6961 Proin Avenue","Terme","Luhansk oblast","Pakistan","","",32),
+  ("P.O. Box 800, 6782 Elit Ave","Sankt Johann im Pongau","Limón","Sweden","","",33),
+  ("6105 Sem Rd.","Inner Mongolia","Illes Balears","Singapore","","",34),
+  ("245-1546 Risus. Avenue","Kirov","Hamburg","India","","",35),
+  ("9303 Augue, Rd.","Cuenca","North-East Region","Chile","","",36),
+  ("359-3378 Nulla Rd.","Mmabatho","Limón","India","","",37),
+  ("924-1256 Neque. St.","Buguma","Niedersachsen","Austria","","",38),
+  ("2157 Lacus, Road","Pinetown","Rio Grande do Sul","Nigeria","","",39),
+  ("238-2804 Gravida Avenue","Stirling","Konya","Peru","","",40);
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #699-8637 In Avenue","Serang","Eastern Cape","Netherlands","","",41),
+  ("339-3961 Convallis Avenue","Dutse","Waals-Brabant","Belgium","","",42),
+  ("Ap #940-1120 Nisi Rd.","Oudtshoorn","Champagne-Ardenne","Sweden","","",43),
+  ("292-9439 Pede Rd.","Pachuca","Guanajuato","Chile","","",44),
+  ("3506 Elit Road","Whyalla","Murcia","Belgium","","",45),
+  ("547-8824 Elit, Road","Cuenca","Puntarenas","Pakistan","","",46),
+  ("674-521 Cum St.","Pavlohrad","Riau Islands","Costa Rica","","",47),
+  ("P.O. Box 640, 2288 Varius Av.","Drohobych","Sicilia","Turkey","","",48),
+  ("656-3397 Luctus Av.","Des Moines","Östergötlands län","Costa Rica","","",49),
+  ("856-3757 Tortor Ave","Pacoa","Free State","Philippines","","",50);
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("5595 Ante St.","Lublin","West Bengal","Austria","","",51),
+  ("Ap #433-6716 Bibendum Rd.","Jönköping","Khánh Hòa","Ukraine","","",52),
+  ("501-2992 Tristique Road","Odda","Champagne-Ardenne","Germany","","",53),
+  ("Ap #755-1627 Posuere, St.","Suruç","Nghệ An","Norway","","",54),
+  ("2228 Semper, Ave","Zandvoorde","Henegouwen","Ukraine","","",55),
+  ("P.O. Box 715, 739 Accumsan Avenue","Sungai Penuh","Troms og Finnmark","Russian Federation","","",56),
+  ("Ap #889-8170 Eget, Rd.","Beausejour","Valparaíso","Belgium","","",57),
+  ("Ap #279-3094 Donec Rd.","Bergen","Viken","India","","",58),
+  ("6168 Semper Street","Carahue","Kansas","South Africa","","",59),
+  ("368-8063 Fermentum Av.","Stargard Szczeciński","Rivne oblast","France","","",60);
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #669-2127 Nunc Street","Langley","Ulster","Poland","","",61),
+  ("Ap #699-6243 Luctus. Av.","Galashiels","Tamil Nadu","Poland","","",62),
+  ("P.O. Box 618, 3269 Auctor Rd.","Vadodara","Chihuahua","Turkey","","",63),
+  ("112-7087 Sit Road","Timaru","Gävleborgs län","Philippines","","",64),
+  ("471-6434 Ullamcorper, Rd.","Xuân Trường","Dalarnas län","United Kingdom","","",65),
+  ("812-9459 Magna. Street","Petrolina","Dōngběi","Pakistan","","",66),
+  ("747-5914 Nulla Street","Dhanbad","San Andrés y Providencia","Norway","","",67),
+  ("P.O. Box 434, 6256 Lacus. St.","Daman","Central Region","Sweden","","",68),
+  ("Ap #253-1716 Sed Rd.","Darwin","Limpopo","South Korea","","",69),
+  ("Ap #275-2805 Enim Street","Inner Mongolia","Jeju","Ukraine","","",70);
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #502-693 Aliquam Rd.","Zamość","Sverdlovsk Oblast","Russian Federation","","",71),
+  ("P.O. Box 651, 8463 Cras Av.","Freiberg","Hidalgo","Canada","","",72),
+  ("742-4915 Eu St.","Te Puke","Munster","South Korea","","",73),
+  ("Ap #565-227 Pellentesque. Ave","Phong Thổ","Van","France","","",74),
+  ("761-6192 Nec, Avenue","Altach","FATA","Chile","","",75),
+  ("P.O. Box 235, 7493 Sapien Ave","Khanewal","Xīnán","India","","",76),
+  ("8496 Eleifend St.","Iriga","North Island","Australia","","",77),
+  ("Ap #566-5324 Phasellus Ave","Liberia","Centre","Mexico","","",78),
+  ("564-4466 Enim. Street","Yeongcheon","Benue","Nigeria","","",79),
+  ("685-6824 Sed Rd.","Pekanbaru","Dōngběi","Sweden","","",80);
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("P.O. Box 188, 843 Amet Rd.","Puntarenas","Radnorshire","United States","","",81),
+  ("5182 Proin St.","Drammen","Victoria","United Kingdom","","",82),
+  ("1188 Curabitur Rd.","Waiuku","Sardegna","Canada","","",83),
+  ("Ap #933-4961 Scelerisque Street","Cañas","Staffordshire","China","","",84),
+  ("107-1847 Nibh Av.","Montleban","East Region","Singapore","","",85),
+  ("265-3928 Sit Rd.","Kurram Agency","Burgenland","Chile","","",86),
+  ("Ap #843-2290 Leo. Ave","Alajuela","Oklahoma","New Zealand","","",87),
+  ("P.O. Box 620, 5970 Ut Rd.","Tacoma","Nordland","Mexico","","",88),
+  ("Ap #846-1635 Ullamcorper, St.","Pasir Ris","Diyarbakır","China","","",89),
+  ("786-9269 Malesuada Av.","Coevorden","Brussels Hoofdstedelijk Gewest","Poland","","",90);
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #345-9322 Convallis Ave","Bukittinggi","Kherson oblast","Australia","","",91),
+  ("129-4534 Tellus Ave","Cork","Sardegna","Germany","","",92),
+  ("6650 Proin Ave","Sandefjord","North West","Vietnam","","",93),
+  ("Ap #551-9334 Erat. St.","Gonda","Connacht","Vietnam","","",94),
+  ("P.O. Box 268, 7170 Eget, Road","Moncton","Tennessee","Germany","","",95),
+  ("P.O. Box 486, 6611 Et, St.","Assen","Punjab","Sweden","","",96),
+  ("Ap #364-5430 Lectus St.","Almere","Podlaskie","Ireland","","",97),
+  ("P.O. Box 604, 5199 Arcu. Rd.","Orhangazi","Chandigarh","United States","","",98),
+  ("256-1010 Erat, Street","Kincardine","Xīběi","United States","","",99),
+  ("2748 Ut Rd.","Maranguape","Cartago","United States","","",100);
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #761-2856 Magnis Road","Borås","Hưng Yên","Philippines","",298,""),
+  ("330-8233 Ac St.","Annan","Saarland","Colombia","",124,""),
+  ("797-2208 Justo Av.","Shaanxi","Catalunya","Philippines","",118,""),
+  ("Ap #859-3969 Nunc St.","Hòa Bình","Washington","New Zealand","",367,""),
+  ("Ap #739-598 Elit St.","Gboko","North Island","Netherlands","",285,""),
+  ("Ap #196-8853 Nisl. Rd.","Dublin","Balıkesir","China","",187,""),
+  ("P.O. Box 332, 7672 Ultricies Street","Rueil-Malmaison","Ceará","Spain","",438,""),
+  ("Ap #506-7836 Rhoncus. St.","Bauchi","Friesland","Canada","",8,""),
+  ("Ap #825-7549 Vestibulum Street","Korosten","Bicol Region","United Kingdom","",37,""),
+  ("646-1137 Dolor. Rd.","Carcassonne","British Columbia","Colombia","",305,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #723-9818 Justo Rd.","Grand-Hallet","Odisha","United States","",135,""),
+  ("168-9337 Condimentum. Rd.","Roxburgh","Salzburg","South Korea","",398,""),
+  ("9267 Magnis Ave","Tabuk","Cordillera Administrative Region","Vietnam","",77,""),
+  ("1388 Nisl Avenue","Dublin","Thừa Thiên–Huế","Colombia","",147,""),
+  ("214-8397 Non Rd.","Kharmang","Cagayan Valley","Australia","",115,""),
+  ("P.O. Box 181, 2998 Nam Rd.","Cáceres","Valle d'Aosta","Singapore","",69,""),
+  ("Ap #649-3563 Ante Road","Sarpsborg","North Region","Brazil","",481,""),
+  ("749-4927 Quam, Rd.","Sint-Genesius-Rode","Southwestern Tagalog Region","Colombia","",435,""),
+  ("Ap #505-4771 Lorem Avenue","Tczew","New South Wales","Mexico","",430,""),
+  ("405-9903 Malesuada Street","Barranquilla","Cheshire","Belgium","",90,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("P.O. Box 875, 2016 Nulla. Rd.","Galway","Huila","Netherlands","",315,""),
+  ("870-9149 Molestie Avenue","Anhui","Dadra and Nagar Haveli","India","",146,""),
+  ("172-6050 Proin Road","Kemerovo","Western Cape","Philippines","",367,""),
+  ("P.O. Box 576, 6496 Enim Avenue","Silvassa","Shropshire","India","",77,""),
+  ("1438 Arcu. Avenue","Picton","Alajuela","Norway","",30,""),
+  ("Ap #446-2777 Odio. Rd.","Trujillo","Melilla","South Korea","",316,""),
+  ("714-4435 Rutrum Street","Baubau","North Gyeongsang","Colombia","",339,""),
+  ("313-6485 A, Street","Otukpo","Azad Kashmir","Belgium","",446,""),
+  ("Ap #207-4969 Lectus, St.","Bhimber","Balochistan","Peru","",350,""),
+  ("Ap #978-4425 Sem, Road","Liaoning","Kujawsko-pomorskie","Belgium","",271,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("P.O. Box 538, 7845 Mauris Road","Orito","Illes Balears","Indonesia","",32,""),
+  ("Ap #131-899 Pharetra Rd.","Ayas","Brussels Hoofdstedelijk Gewest","United States","",240,""),
+  ("Ap #238-4474 Orci Rd.","Chernihiv","Kaduna","Nigeria","",259,""),
+  ("555-9506 Eleifend Av.","HomprŽ","Norfolk","Ukraine","",371,""),
+  ("496-2383 Pellentesque St.","Zamboanga City","Vorarlberg","Italy","",67,""),
+  ("886-8203 Ipsum Avenue","Armidale","Vermont","Costa Rica","",365,""),
+  ("912-1222 Nibh. St.","Maiduguri","Tarapacá","Pakistan","",390,""),
+  ("Ap #140-6113 Tristique Ave","Aserrí","Adana","United States","",494,""),
+  ("P.O. Box 569, 5939 Magnis Rd.","McCallum","Kayseri","Sweden","",468,""),
+  ("Ap #324-6189 Nunc St.","Oranienburg","Dōngběi","Sweden","",112,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("116-4967 Est. Rd.","Shanghai","Bình Thuận","Belgium","",37,""),
+  ("P.O. Box 189, 5479 Mollis Street","Banda Aceh","Alberta","United States","",248,""),
+  ("Ap #670-7584 Ac Street","Tuy Hòa","Troms og Finnmark","Ukraine","",276,""),
+  ("P.O. Box 863, 4593 Sed, Road","Galway","Veracruz","Sweden","",354,""),
+  ("396 Eu Avenue","Palma de Mallorca","Kocaeli","Germany","",279,""),
+  ("Ap #346-5337 Pede, Av.","Vienna","Gävleborgs län","Poland","",489,""),
+  ("273-1376 Posuere St.","Iriga","Bangsamoro","Ukraine","",309,""),
+  ("321-7605 At St.","Macduff","North-East Region","Austria","",60,""),
+  ("198-777 Dictum Road","Cusco","Warmińsko-mazurskie","Singapore","",186,""),
+  ("1515 Libero. Avenue","Simon's Town","Haryana","France","",433,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("772-9412 Ipsum Avenue","Trollhättan","Balochistan","Belgium","",310,""),
+  ("449-9141 Lorem Road","Cambiago","Rio Grande do Sul","United Kingdom","",59,""),
+  ("Ap #335-6342 Eget Street","Novo Hamburgo","Amur Oblast","Chile","",380,""),
+  ("120-8898 Natoque Road","Yenakiieve","Eastern Cape","Sweden","",206,""),
+  ("815-4002 Augue Street","Western Water Catchment","Zuid Holland","Peru","",364,""),
+  ("Ap #593-4485 Vestibulum, Avenue","Hải Phòng","Michigan","Norway","",211,""),
+  ("272-1192 Cum Rd.","Galway","Chocó","Pakistan","",391,""),
+  ("P.O. Box 193, 4155 Velit Rd.","Awka","Huádōng","Netherlands","",358,""),
+  ("Ap #237-6457 Dui. Rd.","Nîmes","Norte de Santander","Ukraine","",48,""),
+  ("773-7029 Suscipit, Rd.","Jilin","Sląskie","France","",18,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #402-9456 Luctus, Avenue","Imus","Jharkhand","United Kingdom","",153,""),
+  ("1776 Donec Rd.","San Vicente de Cañete","Sindh","Brazil","",376,""),
+  ("Ap #303-9190 Velit Rd.","Fort Providence","Thừa Thiên–Huế","France","",273,""),
+  ("6709 Orci St.","Doetinchem","Zuid Holland","Norway","",392,""),
+  ("2491 Lacus Av.","Körfez","Niedersachsen","Germany","",214,""),
+  ("P.O. Box 471, 2926 Quis Road","Bremerhaven","South Jeolla","Costa Rica","",63,""),
+  ("706-617 Lectus. Rd.","Ruddervoorde","Central Luzon","Brazil","",57,""),
+  ("773-9870 Sodales Av.","Guangxi","Kentucky","Norway","",337,""),
+  ("4763 Maecenas St.","Kursk","Andalucía","Norway","",69,""),
+  ("P.O. Box 167, 653 Donec Street","Saint-Louis","Papua","China","",131,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("P.O. Box 255, 7362 Tristique Ave","Punggol","Sucre","France","",41,""),
+  ("Ap #557-6806 Lectus Rd.","Novgorod","Missouri","Colombia","",398,""),
+  ("339-6951 Ut Av.","Molde","Jharkhand","India","",451,""),
+  ("749-7920 Pellentesque Ave","Illapel","Maranhão","Austria","",360,""),
+  ("960-2497 Lacus. Road","Florø","Basilicata","Canada","",383,""),
+  ("P.O. Box 824, 959 Consectetuer Avenue","Mount Gambier","Oyo","South Africa","",471,""),
+  ("533-5642 Dolor Rd.","Manokwari","Baja California","Mexico","",392,""),
+  ("Ap #613-4502 Velit Avenue","Arequipa","Orkney","Russian Federation","",450,""),
+  ("Ap #420-8481 Ut St.","Shillong","Zhytomyr oblast","Brazil","",221,""),
+  ("Ap #836-7201 Sed St.","Bajaur Agency","Jalisco","Colombia","",210,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("3575 Quis Rd.","Bama","Kansas","Australia","",357,""),
+  ("P.O. Box 215, 5328 Amet Avenue","Palakkad","Puntarenas","Ireland","",181,""),
+  ("P.O. Box 111, 5317 Nonummy Road","Belfast","Maranhão","Chile","",244,""),
+  ("Ap #971-4579 Suspendisse Rd.","Barranca","Tasmania","Brazil","",166,""),
+  ("Ap #971-2506 Sit Av.","Castres","Samsun","Colombia","",394,""),
+  ("513-8171 Mauris Avenue","Pontarlier","Piemonte","New Zealand","",68,""),
+  ("528-7189 Fusce Street","Klerksdorp","Viken","Canada","",300,""),
+  ("593-9634 At Road","Central Water Catchment","Bengkulu","New Zealand","",287,""),
+  ("1798 Sit Av.","Tromsø","North Island","Canada","",222,""),
+  ("103-1031 Eu Road","Belfast","North Island","India","",294,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #102-8833 Neque. Avenue","Béthune","Arequipa","South Korea","",320,""),
+  ("1267 Lobortis Av.","Mexico City","Khyber Pakhtoonkhwa","Belgium","",280,""),
+  ("P.O. Box 636, 8880 Auctor St.","Berlin","Berlin","Colombia","",293,""),
+  ("3673 Et Avenue","Emmen","Castilla y León","Poland","",421,""),
+  ("5525 Libero Rd.","Tolve","East Region","Ukraine","",267,""),
+  ("256-9006 Eget, Road","Carmarthen","Ryazan Oblast","United Kingdom","",449,""),
+  ("280-3177 Luctus Street","Vienna","Gangwon","Colombia","",55,""),
+  ("4873 Mattis Rd.","Catacaos","Andalucía","Australia","",435,""),
+  ("P.O. Box 860, 3866 Non Ave","Darwin","Heredia","Peru","",9,""),
+  ("435-2442 Odio. Ave","Shostka","Puebla","South Africa","",272,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("855-2113 Quis Street","Mora","Alaska","India","",104,""),
+  ("Ap #538-7894 Velit Street","Navadwip","Valparaíso","Norway","",411,""),
+  ("2463 Eu, St.","Daegu","Alajuela","Ukraine","",472,""),
+  ("987-8060 Consequat Avenue","Oslo","Maluku","Mexico","",433,""),
+  ("269 Et Ave","Southern Islands","Leinster","Singapore","",71,""),
+  ("739-7257 Eget Rd.","Nashville","Prince Edward Island","India","",28,""),
+  ("434-158 Varius Av.","Yurimaguas","North Maluku","Peru","",131,""),
+  ("Ap #784-8513 Curabitur Rd.","Canberra","Pembrokeshire","South Korea","",63,""),
+  ("Ap #497-2527 Tempus, Street","Zamora","Borno","Austria","",129,""),
+  ("1315 Aliquam Rd.","Yangsan","Tasmania","Brazil","",365,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("P.O. Box 499, 799 Nec, Street","Reggio nell'Emilia","Limousin","Germany","",430,""),
+  ("Ap #223-1849 Morbi St.","La Plata","Dalarnas län","United States","",264,""),
+  ("723-9163 Dui Av.","Port Harcourt","Caldas","Turkey","",35,""),
+  ("Ap #155-6598 Porttitor Av.","Dallas","Alsace","New Zealand","",145,""),
+  ("Ap #660-1268 Vivamus Rd.","Macau","Los Lagos","United States","",41,""),
+  ("491-7179 Maecenas Av.","Duluth","Overijssel","Norway","",12,""),
+  ("680-5450 Aliquam Avenue","Newark","Oaxaca","China","",8,""),
+  ("622-5719 Sit Av.","Sant'Egidio del Monte Albino","Flevoland","South Korea","",366,""),
+  ("911-4521 Tellus Street","Newport News","Guanacaste","Indonesia","",190,""),
+  ("985-2605 Tristique Avenue","South Burlington","La Rioja","Nigeria","",160,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("993-3699 Ipsum Avenue","Fujian","Kyiv oblast","Vietnam","",381,""),
+  ("Ap #580-385 Rhoncus. Street","Zhejiang","Leinster","Spain","",38,""),
+  ("Ap #635-3470 Tortor St.","Oberpullendorf","Galicia","South Korea","",326,""),
+  ("978 At, Rd.","Wałbrzych","Tarapacá","Norway","",379,""),
+  ("P.O. Box 215, 6307 Justo. Ave","Chungju","Northern Cape","New Zealand","",370,""),
+  ("503-7969 Egestas Ave","Palombaro","Goiás","Mexico","",42,""),
+  ("882-6500 Nec St.","Beausejour","Yên Bái","Philippines","",364,""),
+  ("P.O. Box 433, 8055 Gravida Street","Freiburg","Eastern Visayas","Colombia","",68,""),
+  ("239-2984 Sed St.","Purral","Yukon","South Korea","",472,""),
+  ("111-3536 Tempus, Ave","Punggol","Lower Austria","Colombia","",18,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("P.O. Box 361, 5802 Ut Avenue","Mount Isa","Bremen","United States","",144,""),
+  ("743-5952 Dui, Avenue","Quesada","East Region","China","",154,""),
+  ("4381 Et Av.","Jammu","Brandenburg","South Africa","",334,""),
+  ("Ap #769-5350 Viverra. Road","Matlock","Munster","Vietnam","",97,""),
+  ("Ap #143-1762 Sodales. Road","Cork","Samsun","Norway","",343,""),
+  ("9139 Nam Ave","Vitória da Conquista","Nordland","Costa Rica","",391,""),
+  ("P.O. Box 663, 2091 Et Av.","San Pedro Garza García","Tabasco","France","",251,""),
+  ("710-5696 Eros. Street","Oss","Gaziantep","Mexico","",189,""),
+  ("5203 Sagittis. Rd.","Kostiantynivka","Innlandet","Canada","",449,""),
+  ("P.O. Box 202, 1758 Tellus Rd.","Ashburton","Cumberland","Ireland","",268,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("354-8582 Mollis Ave","Boryeong","Innlandet","Austria","",11,""),
+  ("631-5258 Mattis. Ave","Shanxi","Andhra Pradesh","France","",195,""),
+  ("Ap #870-8979 Ullamcorper Street","Mộc Châu","South Island","South Africa","",413,""),
+  ("124-2459 At, Rd.","Pocatello","Heredia","Sweden","",313,""),
+  ("8281 Turpis. Av.","Sortland","Valle d'Aosta","South Korea","",99,""),
+  ("996-3105 Posuere, Rd.","Arequipa","South Island","Spain","",435,""),
+  ("970-4608 Nostra, Rd.","Kawerau","Bauchi","Costa Rica","",198,""),
+  ("Ap #313-6655 In Ave","Buôn Ma Thuột","Nagaland","Mexico","",65,""),
+  ("1700 Egestas Road","Incheon","Khyber Pakhtoonkhwa","Germany","",9,""),
+  ("P.O. Box 208, 831 Nunc Ave","Senftenberg","Ulster","Ukraine","",137,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("Ap #823-1598 Erat, St.","Rawalakot","Arica y Parinacota","Russian Federation","",275,""),
+  ("P.O. Box 449, 127 Morbi Rd.","Huaraz","Khyber Pakhtoonkhwa","Nigeria","",423,""),
+  ("444-7677 Pharetra, Road","Ålesund","Ceará","Indonesia","",330,""),
+  ("Ap #721-624 Sollicitudin St.","Alice","Western Cape","Mexico","",187,""),
+  ("P.O. Box 557, 7114 Sed Ave","Anhui","Murcia","Ireland","",87,""),
+  ("Ap #416-2378 Auctor Street","Gangneung","Quebec","Belgium","",160,""),
+  ("2001 Egestas Street","Yurimaguas","Mpumalanga","China","",125,""),
+  ("462-5933 Ornare, Street","Kirov","Sokoto","Ukraine","",256,""),
+  ("P.O. Box 105, 4522 Eu Rd.","Diamer","Cherkasy oblast","Germany","",492,""),
+  ("641-919 Lectus Ave","Cork","Xīnán","United Kingdom","",323,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("P.O. Box 620, 3977 Viverra. Rd.","Kruibeke","Tamil Nadu","South Africa","",201,""),
+  ("Ap #490-5275 Orci. St.","Worcester","Donetsk oblast","Austria","",385,""),
+  ("391-4609 Duis Rd.","Long Xuyên","South Island","South Africa","",233,""),
+  ("P.O. Box 125, 469 Nulla. Ave","North-Eastern Islands","Balıkesir","Austria","",19,""),
+  ("P.O. Box 752, 5707 Magnis Rd.","Vehari","Gilgit Baltistan","Turkey","",476,""),
+  ("Ap #368-3289 Praesent Av.","Ballarat","Jigawa","Colombia","",177,""),
+  ("Ap #985-6053 Nulla Avenue","Otukpo","Madhya Pradesh","Ireland","",481,""),
+  ("Ap #718-2559 Orci Rd.","Murmansk","North Island","Poland","",326,""),
+  ("P.O. Box 111, 1866 Malesuada Av.","Southaven","Azad Kashmir","China","",66,""),
+  ("336-9080 Auctor Rd.","Puno","Chandigarh","South Korea","",295,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("6114 Facilisis, Road","Ternate","Lakshadweep","Pakistan","",215,""),
+  ("559-7480 Donec Av.","Avesta","Gävleborgs län","Netherlands","",381,""),
+  ("Ap #865-9531 Vitae Street","Rzeszów","Vlaams-Brabant","Spain","",93,""),
+  ("524-980 Dis Avenue","Sint-Ulriks-Kapelle","Victoria","Vietnam","",363,""),
+  ("P.O. Box 763, 3914 Ut St.","Wichelen","Pays de la Loire","United Kingdom","",183,""),
+  ("Ap #395-7215 Egestas Avenue","Tual","Drenthe","Belgium","",358,""),
+  ("Ap #287-3707 Facilisis Avenue","Simpang","Alberta","Vietnam","",221,""),
+  ("Ap #113-6977 Et Rd.","Gebze","Maluku","South Korea","",101,""),
+  ("1466 Ipsum Road","Málaga","Schleswig-Holstein","Singapore","",449,""),
+  ("P.O. Box 219, 4728 Sed, Avenue","Breda","Limousin","India","",19,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("662-1497 Nisi. Avenue","Florencia","Saskatchewan","Poland","",99,""),
+  ("8663 Elementum Rd.","Haveli","San Luis Potosí","Chile","",197,""),
+  ("P.O. Box 383, 4385 Sed Rd.","Saskatoon","South Island","Vietnam","",195,""),
+  ("Ap #290-5179 Tincidunt St.","Turgutlu","Warwickshire","India","",423,""),
+  ("4345 Ridiculus Avenue","Częstochowa","South Gyeongsang","Sweden","",286,""),
+  ("Ap #104-6823 Arcu. Rd.","Shaanxi","Arunachal Pradesh","Russian Federation","",117,""),
+  ("Ap #381-979 Non St.","North Battleford","Alajuela","Russian Federation","",20,""),
+  ("Ap #476-1294 In Ave","Izmail","La Libertad","Italy","",117,""),
+  ("Ap #521-7470 Nullam Street","Göteborg","Lazio","Canada","",356,""),
+  ("P.O. Box 841, 5503 Erat Ave","Sumy","Dōngběi","Italy","",252,"");
+INSERT INTO `direcciones` (`direccion`,`ciudad`,`provincia`,`pais`,`customer_id`,`employee_id`,`branch_id`)
+VALUES
+  ("8796 Duis Ave","Serangoon","FATA","Belgium","",274,""),
+  ("Ap #112-1086 Blandit Ave","Okene","Samsun","Russian Federation","",405,""),
+  ("142-4155 Sed St.","Vũ Thư","Imo","Philippines","",123,""),
+  ("P.O. Box 473, 913 Diam Rd.","Jacksonville","Araucanía","Ukraine","",375,""),
+  ("P.O. Box 867, 6504 Eu St.","Stockholm","Huádōng","Singapore","",358,""),
+  ("Ap #961-3032 Pede. Av.","Lidingo","Nghệ An","Italy","",494,""),
+  ("1080 Tempor St.","Uddevalla","Podkarpackie","Brazil","",23,""),
+  ("Ap #156-7768 Est, Av.","Suwałki","Lagos","Sweden","",265,""),
+  ("P.O. Box 388, 156 Ullamcorper, Avenue","Morrinsville","La Libertad","Vietnam","",346,""),
+  ("Ap #462-1079 Nisi. Road","Götzis","Azad Kashmir","Austria","",120,"");
+*/
+
+-- ITEM OCHO
+ALTER TABLE cuenta
+ADD FOREIGN KEY (tipos_de_cuentas_id) REFERENCES tipos_de_cuentas(tipos_de_cuentas_id);
+
+-- ITEM NUEVE
