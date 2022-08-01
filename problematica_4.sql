@@ -28,4 +28,33 @@ inner join sucursal a
 on b.branch_id = a.branch_id
 group by a.branch_name
 
+#item5
 
+CREATE TABLE auditoria_cuenta (
+    old_id INTEGER NOT NULL,
+    new_id INTEGER NOT NULL,
+    old_balance INTEGER NOT NULL,
+    new_balance INTEGER NOT NULL,
+    old_iban TEXT NOT NULL,
+    new_iban TEXT NOT NULL,
+    old_tipos_de_cuentas_id TEXT,
+    new_tipos_de_cuentas_id TEXT,
+    user_action TEXT NOT NULL,
+    created_at TEXT NOT NULL
+);
+#item5sub1
+CREATE TRIGGER after_update_cuenta
+    AFTER UPDATE ON cuenta
+    WHEN old.balance <> new.balance
+        OR old.iban <> new.iban
+        OR old.tipos_de_cuentas_id <> new.tipos_de_cuentas_id
+BEGIN
+    INSERT INTO 'auditoria_cuenta' (old_id, new_id, old_balance, new_balance, old_iban, new_iban, old_tipos_de_cuentas_id, new_tipos_de_cuentas_id, user_action, created_at)
+    VALUES (old.customer_id, new.customer_id, old.balance, new.balance, old.iban, new.iban, old.tipos_de_cuentas_id, new.tipos_de_cuentas_id, 'UPDATE', DATETIME('NOW'));
+END;
+#item5sub2
+UPDATE cuenta
+SET balance = balance-100
+WHERE account_id BETWEEN 10 AND 14;
+
+#item6
