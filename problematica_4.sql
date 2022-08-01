@@ -60,3 +60,31 @@ WHERE account_id BETWEEN 10 AND 14;
 #item6
 CREATE INDEX cliente_customer_dni_idx
 ON cliente (customer_DNI);
+
+#item7
+CREATE TABLE movimientos (
+    movimiento_id INTEGER NOT NULL,
+    numero_cuenta TEXT NOT NULL,
+    monto INTEGER NOT NULL,
+    tipo_operacion TEXT NOT NULL,
+    hora TEXT NOT NULL,
+    PRIMARY KEY("movimiento_id" AUTOINCREMENT)
+);
+#item7sub
+BEGIN TRANSACTION;
+
+UPDATE cuenta
+SET balance = balance - 1000
+WHERE account_id = 200;
+
+UPDATE cuenta
+SET balance = balance + 1000
+WHERE account_id = 400;
+
+INSERT INTO movimientos(numero_cuenta, monto, tipo_operacion, hora)
+VALUES (200, 1000, 'Disminución', DATETIME('NOW'));
+
+INSERT INTO movimientos(numero_cuenta, monto, tipo_operacion, hora)
+VALUES (400, 1000, 'Aumento', DATETIME('NOW'));
+
+COMMIT;
