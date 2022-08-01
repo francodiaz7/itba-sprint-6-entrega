@@ -1,8 +1,8 @@
 #item1
-select  b.branch_name, count(b.branch_name)
+select  b.branch_name, count(b.branch_name) AS CantClientes
 from cliente a inner join sucursal b
 on b.branch_id = a.branch_id
-GROUP by b.branch_name
+GROUP by b.branch_name ORDER BY count(b.branch_name) DESC;
 
 #item2
 select  b.branch_name, count(b.branch_name), count(employee_id)
