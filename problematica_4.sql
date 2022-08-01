@@ -13,6 +13,11 @@ inner join empleado c on c.branch_id = a.branch_id
 
 GROUP by b.branch_name
 
+#item3
+SELECT a.branch_name AS Sucursal, COUNT(b.customer_id) AS 'Cantidad clientes', COUNT(*) FILTER (WHERE c.tipo_tarjeta LIKE '%Crédito%') AS Crédito, COUNT(*) FILTER (WHERE c.tipo_tarjeta LIKE '%Débito%') AS Débito
+FROM sucursal a INNER JOIN cliente b ON a.branch_id = b.branch_id
+				INNER JOIN tarjeta c ON c.customer_id = b.customer_id
+GROUP BY a.branch_name
 
 #item4
 select  a.branch_name, avg(c.loan_total)
