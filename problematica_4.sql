@@ -37,8 +37,8 @@ CREATE TABLE auditoria_cuenta (
     new_balance INTEGER NOT NULL,
     old_iban TEXT NOT NULL,
     new_iban TEXT NOT NULL,
-    old_tipos_de_cuentas_id TEXT,
-    new_tipos_de_cuentas_id TEXT,
+    old_type TEXT,
+    new_type TEXT,
     user_action TEXT NOT NULL,
     created_at TEXT NOT NULL
 );
@@ -49,7 +49,7 @@ CREATE TRIGGER after_update_cuenta
         OR old.iban <> new.iban
         OR old.tipos_de_cuentas_id <> new.tipos_de_cuentas_id
 BEGIN
-    INSERT INTO 'auditoria_cuenta' (old_id, new_id, old_balance, new_balance, old_iban, new_iban, old_tipos_de_cuentas_id, new_tipos_de_cuentas_id, user_action, created_at)
+    INSERT INTO 'auditoria_cuenta' (old_id, new_id, old_balance, new_balance, old_iban, new_iban, old_type, new_type, user_action, created_at)
     VALUES (old.customer_id, new.customer_id, old.balance, new.balance, old.iban, new.iban, old.tipos_de_cuentas_id, new.tipos_de_cuentas_id, 'UPDATE', DATETIME('NOW'));
 END;
 #item5sub2
